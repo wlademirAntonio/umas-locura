@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.base {
+    width: 100%;
+    height: 647px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.arcoiris {
+    position: absolute;
+    width: 25%;
+    animation: descer 5s infinite linear;
+}
+
+.arcoiris .cores {
+    height: 10px;
+}
+
+@keyframes descer {
+    0% {
+        right: 0;
+        top: 0;
+    }
+    25% {
+        right: 75%;
+        top: 90%
+    }
+    50% {
+        right: 75%;
+        top: 0;
+    }
+    75% {
+        right: 0;
+        top: 90%;
+    }
+    100% {
+        right: 0;
+        top: 0;
+    }
+}
